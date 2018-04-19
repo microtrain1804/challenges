@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Calc</title>
+
+  </head>
+  <body>
+
+    <input size="3" type="text" id="num1">
+    <input size="3" type="text" id="operator">
+    <input size="3" type="text" id="num2">
+    <div id="answer"></div>
+        
+
+    <button id="getAnswer">submit</button>
+    
+
+    <script>
+      var num1 = document.getElementById('num1');
+      var num2 = document.getElementById('num2');
+      var operator = document.getElementById('operator');
+      var getAnswer = document.getElementById('getAnswer');
+      var answer = document.getElementById('answer');
+      
+      var result = 0;
+
+
+      var math = function(){
+        switch(operator.value){
+          case '+':
+            result = parseInt(num1.value) + parseInt(num2.value);
+            break;
+
+          case '-':
+            result = parseInt(num1.value) - parseInt(num2.value);
+            break;
+
+          case '*':
+            result = parseInt(num1.value) * parseInt(num2.value);
+            break;
+
+          case '/':
+            result = parseInt(num1.value) / parseInt(num2.value);
+            break;
+        }
+        answer.innerHTML = result;
+      }
+
+      getAnswer.addEventListener('click', math);
+
+      
+
+    </script>
+
+  </body>
+</html>
