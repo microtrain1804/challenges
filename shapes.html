@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calc</title>
+    <style>
+      
+      * {
+        box-sizing: border-box;
+      }
+
+      .square {
+        display: inline-block;
+        background: #334499;
+        width: 300px;
+        height: 295px;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+      }
+
+      .triangle {
+        display: inline-block;
+        background: #fff;
+        width: 300px;
+        height: 0px;
+        border-bottom: 150px solid #1122ff;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        position: absolute;
+        bottom: 300;
+        left: 20px;
+      }
+
+      .circle {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        background: #fff000;
+      }
+
+
+      .octagon-outter {
+        position: relative;
+        overflow: hidden;
+        width:50px;
+        height:50px;
+      }
+      .octagon-inner {
+          position: absolute;
+          top: 0; right: 0; bottom: 0; left: 0;
+          overflow: hidden;
+          transform: rotate(45deg);
+          background: #ff0000;
+          border: 3px solid #000;
+      }
+      .octagon-inner:before {
+          position: absolute;
+          top: -3px; right: -3px; bottom: -3px; left: -3px;
+          transform: rotate(45deg);
+          content: '';
+          border: inherit;
+      }
+
+      .sign {
+        position: absolute;
+        right: 150px;
+        bottom: 80px;
+      }
+
+      .post {
+        width: 5px;
+        height: 80px;
+        position: absolute;
+        right: 172px;
+        bottom: 0px;
+        background: #777;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="circle"></div>
+    <div class="triangle"></div>
+    <div class="square"></div>
+
+    <div class="sign">
+        <div class='octagon-outter'>
+            <div class='octagon-inner'></div>
+        </div>
+    </div>
+    <div class="post"></div>
+
+
+  </body>
+</html>
