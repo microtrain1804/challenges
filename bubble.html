@@ -7,28 +7,28 @@
   <body>
 
     <script>
+        var list = [9,8,7,6,5,4,3,2,1,0];
+        var sorting;
+        //var x=0;
 
-        var list = [2,1,4,9,0,3,5,8,7,6];
-        var sorting = true;
-        var temp1 = [];
-
-        while(sorting === true){
-            temp1 = list;
+        do{
+            sorting = false;
             for(var i=0; i < list.length-1; i++) {
                 if(list[i] > list[i+1]){
-                    var temp2 = list[i];
+                    var temp = list[i];
                     list[i] = list[i+1];
-                    list[i+1] = temp2;
+                    list[i+1] = temp;
+                    sorting = true;
                 }
-                console.log(list);
             }
+            //x++;
+            //if(x>20){
+                //break;
+            //}
+            //console.log(list);
+        }while(sorting);
 
-            if(temp1 == list){
-                break;
-            }
-
-        }
-
+        console.log(list);
 
     </script>
 
