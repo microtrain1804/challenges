@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Calc</title>
+
+  </head>
+  <body>
+
+    <script>
+
+        var list = [2,1,4,9,0,3,5,8,7,6];
+        var sorting = true;
+        var temp1 = [];
+
+        while(sorting === true){
+            temp1 = list;
+            console.log(list);
+            for(var i=0; i < list.length-1; i++) {
+                if(list[i] > list[i+1]){
+                    var temp2 = list[i];
+                    list[i] = list[i+1];
+                    list[i+1] = temp2;
+                }
+                console.log(list);
+            }
+
+
+            if(temp1 == list){
+                break;
+            }
+
+        }
+
+
+    </script>
+
+  </body>
+</html>
