@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Calc</title>
+
+  </head>
+  <body>
+
+    <script>
+
+        var array1 = [2,1,4,9,0,3,5,8,7,6];
+        //var array1 = [9,8,7,6,5,4,3,2,1,0];
+        var sorting = true;
+
+        for(var temp1=0; temp1<array1.length-1; temp1++){
+            for(var temp2=0; temp2<array1.length-1; temp2++){
+                if(array1[temp2]>array1[temp2+1]){
+                    var holdme = array1[temp2];
+                    array1[temp2]=array1[temp2+1];
+                    array1[temp2+1]=holdme;
+                }
+                console.log(array1);
+            }
+        }
+
+
+    </script>
+
+  </body>
+</html>

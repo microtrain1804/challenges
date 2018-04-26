@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>CSS Animation</title>
+      <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .cover {
+            height: 100vh;
+            background: linear-gradient(
+                to top left, 
+                #ff1493 25%, 
+                #39643c 50%,
+                #ff1493 75%, 
+                #39643c 100%
+            );
+            background-size: 600%;
+            animation: LinearEffect 40s ease-in-out;
+            -webkit-animation: LinearEffect 40s ease-in-out;
+            -moz-animation: LinearEffect 40s ease-in-out;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes LinearEffect {
+            0% {
+                background-position: 0% 50%;
+            }
+            25% {
+                background-position: 100% 50%;
+            }
+            50% {
+                background-position: 0% 50%;
+            }
+            75% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        @-webkit-keyframes LinearEffect {
+            0% {
+                background-position: 0% 50%;
+            }
+            25% {
+                background-position: 100% 50%;
+            }
+            50% {
+                background-position: 0% 50%;
+            }
+            75% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        @-moz-keyframes LinearEffect {
+            0% {
+                background-position: 0% 50%;
+            }
+            25% {
+                background-position: 100% 50%;
+            }
+            50% {
+                background-position: 0% 50%;
+            }
+            75% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+      </style>
+  </head>
+  <body>
+    <div class="cover">
+
+    </div>
+  </body>
+</html>
