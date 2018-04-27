@@ -1,5 +1,4 @@
 <?php
-
 //// Create salt values 
 //// !!!! WARNING !!!! This is NOT production grade randomization
 //echo hash('sha512', rand(10000000000, 99999999999));
